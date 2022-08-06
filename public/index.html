@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>MDC Signup</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6 main">
+                    <form action="/sign_up" method="post">
+                        <h1> MDC Sign Up </h1>
+                        <input class="box" type="text" name="name" id="name" placeholder="Name" required /><br>
+                        <input class="box" type="text" name="username" id="username" placeholder="Username" maxlength="16" onkeyup="this.value = this.value.toLowerCase();" required /><br>
+                        <input class="box" type="password" name="pass" id="pass" placeholder="Password" maxlength="16" required /><br>
+                        <input class="box" type="text" name="vercode" id="vercode" placeholder="4 Digit Verfication Code" maxlength="4" required /><br>
+                        <br>
+                        <input type="submit" id="submitDetails" name="submitDetails" value="Signup" /><br>
+                    </form>
+                    <a href="login.html"><b>Already have an account?</b></a>
+                </div>
+                <div class="col-md-3">    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
